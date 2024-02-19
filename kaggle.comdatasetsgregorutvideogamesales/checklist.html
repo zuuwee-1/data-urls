@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Preparation Checklist</title>
+</head>
+<body>
+
+<h1>Data Preparation Checklist</h1>
+
+<h2>Data Import:</h2>
+<ul>
+  <li><input type="checkbox" id="import-libraries" name="import-libraries" value="Import Required Libraries"> <label for="import-libraries">Import Required Libraries: Import pandas and any other libraries you'll need for data analysis and visualization.</label></li>
+  <li><input type="checkbox" id="load-data" name="load-data" value="Load Data"> <label for="load-data">Load Data: Use pandas to read the data from the source file (e.g., CSV, Excel, SQL database) into a DataFrame.</label></li>
+</ul>
+
+<h2>Initial Data Exploration:</h2>
+<ul>
+  <li><input type="checkbox" id="check-head" name="check-head" value="Check DataFrame Head"> <label for="check-head">Check DataFrame Head: Use df.head() to view the first few rows of the DataFrame and understand its structure.</label></li>
+  <li><input type="checkbox" id="check-info" name="check-info" value="Check DataFrame Info"> <label for="check-info">Check DataFrame Info: Use df.info() to get a summary of the DataFrame including column names, data types, and non-null counts.</label></li>
+  <li><input type="checkbox" id="check-shape" name="check-shape" value="Check DataFrame Shape"> <label for="check-shape">Check DataFrame Shape: Use df.shape to get the dimensions (number of rows and columns) of the DataFrame.</label></li>
+  <li><input type="checkbox" id="check-missing" name="check-missing" value="Check for Missing Values"> <label for="check-missing">Check for Missing Values: Use df.isnull().sum() to check for missing values in each column.</label></li>
+</ul>
+
+<h2>Data Cleaning:</h2>
+<ul>
+  <li><input type="checkbox" id="handle-missing" name="handle-missing" value="Handle Missing Values"> <label for="handle-missing">Handle Missing Values: Decide how to handle missing values (e.g., imputation, removal, flagging).</label></li>
+  <li><input type="checkbox" id="convert-types" name="convert-types" value="Convert Data Types"> <label for="convert-types">Convert Data Types: Convert columns to appropriate data types if necessary (e.g., dates to datetime, categorical variables to category).</label></li>
+  <li><input type="checkbox" id="remove-duplicates" name="remove-duplicates" value="Remove Duplicates"> <label for="remove-duplicates">Remove Duplicates: Use df.drop_duplicates() to remove duplicate rows from the DataFrame.</label></li>
+  <li><input type="checkbox" id="rename-columns" name="rename-columns" value="Rename Columns"> <label for="rename-columns">Rename Columns: Rename columns with meaningful names using df.rename().</label></li>
+  <li><input type="checkbox" id="drop-columns" name="drop-columns" value="Drop Unnecessary Columns"> <label for="drop-columns">Drop Unnecessary Columns: Use df.drop() to remove columns that are not needed for analysis.</label></li>
+</ul>
+
+<h2>Data Transformation:</h2>
+<ul>
+  <li><input type="checkbox" id="feature-engineering" name="feature-engineering" value="Feature Engineering"> <label for="feature-engineering">Feature Engineering: Create new features from existing ones if necessary (e.g., extracting date components, combining columns).</label></li>
+  <li><input type="checkbox" id="normalization-scaling" name="normalization-scaling" value="Normalization/Scaling"> <label for="normalization-scaling">Normalization/Scaling: Scale numerical features if needed to ensure they have similar scales (e.g., using Min-Max scaling or StandardScaler).</label></li>
+  <li><input type="checkbox" id="encoding-variables" name="encoding-variables" value="Encoding Categorical Variables"> <label for="encoding-variables">Encoding Categorical Variables: Encode categorical variables using one-hot encoding or label encoding if needed.</label></li>
+</ul>
+
+<h2>Exploratory Data Analysis (EDA):</h2>
+<ul>
+  <li><input type="checkbox" id="summary-statistics" name="summary-statistics" value="Summary Statistics"> <label for="summary-statistics">Summary Statistics: Calculate summary statistics (e.g., mean, median, min, max) for numerical variables using df.describe().</label></li>
+  <li><input type="checkbox" id="data-visualization" name="data-visualization" value="Data Visualization"> <label for="data-visualization">Data Visualization: Create visualizations (e.g., histograms, scatter plots, box plots) to explore relationships between variables and identify patterns.</label></li>
+</ul>
+
+<h2>Final Checks:</h2>
+<ul>
+  <li><input type="checkbox" id="ensure-consistency" name="ensure-consistency" value="Ensure Data Consistency"> <label for="ensure-consistency">Ensure Data Consistency: Check for any inconsistencies or anomalies in the data (e.g., outliers, unexpected values).</label></li>
+  <li><input type="checkbox" id="handle-outliers" name="handle-outliers" value="Handle Outliers"> <label for="handle-outliers">Handle Outliers: Decide how to handle outliers (e.g., removal, transformation).</label></li>
+  <li><input type="checkbox" id="ensure-integrity" name="ensure-integrity" value="Ensure Data Integrity"> <label for="ensure-integrity">Ensure Data Integrity: Ensure that the data is accurate, complete, and representative of the underlying process.</label></li>
+  <li><input type="checkbox" id="data-partitioning" name="data-partitioning" value="Data Partitioning"> <label for="data-partitioning">Data Partitioning: If applicable, split the data into training and testing sets for model building and evaluation.</label></li>
+</ul>
+
+<h2>Data Export:</h2>
+<ul>
+  <li><input type="checkbox" id="export-cleaned-data" name="export-cleaned-data" value="Export Cleaned Data"> <label for="export-cleaned-data">Export Cleaned Data: Export the cleaned and transformed data to a new file (e.g., CSV, Excel) for further analysis or modeling.</label></li>
+</ul>
+
+</body>
+</html>
